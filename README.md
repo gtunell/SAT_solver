@@ -12,10 +12,13 @@ comma (,). Each encoded literal consists of one or more lowercase letters
 and numbers representing a variable name, optionally preceded by a dash
 (-) representing the negation of the variable.  
 To illustrate, the input  
-        **-a1,a2;a2,-b;b**  
-encodes the boolean formula  
-        **(¬a1 ∨ a2) ∧ (a2 ∨ ¬b) ∧ (b)**  
 
+      **-a1,a2;a2,-b;b**  
+      
+encodes the boolean formula  
+
+      **(¬a1 ∨ a2) ∧ (a2 ∨ ¬b) ∧ (b)**  
+      
 **Output**
 
 The output will be either two or three lines to standard output, depending on
@@ -28,11 +31,15 @@ for some variable v, var name denotes the variable name of v and value
 denotes the boolean value it receives from the assignment (either T or F).
 There will be one such substring per variable that appears in the formula.
 So for the formula  
-        **(¬a1 ∨ a2) ∧ (a2 ∨ ¬b) ∧ (b)**
+
+      **(¬a1 ∨ a2) ∧ (a2 ∨ ¬b) ∧ (b)**  
+      
 given above, one possible assignment would be (a1, a2, b) = (F, T, T). A  
-possible output corresponding to this assignment would be formatted as  
-        **b=T,a1=F,a2=T**
-Regardless of whether the formula is satisfiable or not, on a new line, output a single dollar sign ($)
+possible output corresponding to this assignment would be formatted as 
+
+      **b=T,a1=F,a2=T**  
+      
+Regardless of whether the formula is satisfiable or not, on a new line, output a single dollar sign ($)  
 
 
 
